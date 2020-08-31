@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <ul class="navbar">
+    <ul id="navigation" class="navbar">
       <li class="navbar-list"> <a href="#projects">Projects</a> </li>
       <li class="navbar-list"> <a href="#experience">Experience</a> </li>
       <li class="navbar-list"> <a href="#contacts">Contacts</a> </li>
@@ -34,8 +34,9 @@
               <div class="info">
                 Competitive Programming and Math Enthusiast
               </div>
+              <br>
               <div class="info">
-                Informatics Engineering
+                <strong>Informatics Engineering </strong>
               </div>
               <div class="info">
                 Institut Teknologi Bandung 2018
@@ -135,26 +136,34 @@
     </div>
   </body>
 
+   <script src="script.js"></script>
 
-  <script>
+  <!-- <script>
     function parallax() {
       var scroll_top = document.documentElement.scrollTop;
-      console.log(scroll_top);
+      // console.log(scroll_top);
       var body_top = document.getElementsByClassName("body-content")[0].offsetTop;
       var header_height = document.getElementsByClassName("header-section")[0].scrollHeight;
-      console.log(header_height);
+      var nav_top = document.getElementById('navigation').height;
+      // console.log(header_height);
 
-      console.log(document.getElementById("content").style.marginTop);
+      // console.log(document.getElementById("content").style.marginTop);
       document.getElementById("content").style.marginTop = `${header_height}px`;
-      console.log(document.getElementById("content").style.marginTop);
+      // console.log(document.getElementById("content").style.marginTop);
       var sisa = header_height-scroll_top;
+      if(sisa < nav_top) {
+        console.log("Hai");
+      }
 
       document.getElementsByClassName("header")[0].style.height = `${sisa}px`;
+      // document.getElementById('navigation').height = nav_top;
     }
+
     parallax();
     window.scroll(function() {
       parallax();
     });
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -163,6 +172,6 @@
         });
       });
     });
-  </script>
+  </script> -->
 
 </html>
