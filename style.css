@@ -45,6 +45,8 @@ body {
 }
 
 .wrapper {
+  /*overflow-y: scroll;*/
+  scroll-behavior: smooth;
   position: relative;
   background-color: white;
 }
@@ -55,6 +57,10 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
+/*.img-container {
+  background-image: url('assets/images/hibban.jpg');
+}*/
 
 .sub-body-container {
   width: 100%;
@@ -72,12 +78,24 @@ body {
   font-size: 50px;
 }
 
-.mid-pic {
-  text-align: center;
-  max-height: 200px;
-  padding: 20px;
-  /*margin: 40px;*/
-  border: 2px;
+.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+  width: 250px;
+}
+
+.bio {
+  color: white; 
+  text-align: center; 
+  margin: 40px;
+  font-size: 30px;
+}
+
+.info {
+  margin: 10px;
 }
 
 .navbar {
@@ -90,6 +108,10 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .navbar-list {
@@ -108,6 +130,38 @@ body {
   background-color: #111;
 }
 
+.social-media-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.social-media-card {
+  margin: 50px;
+  background-color: #1F2124;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  float: left;
+}
+
+.social-media-card .icon {
+
+}
+
+.social-media-card .platform {
+  color: white;
+  text-decoration: none;
+}
+
+.social-media-card:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.05);
+  background-color: #000000;
+}
+ 
 .project-card-container {
   display: flex;
   flex-flow: row wrap;
@@ -162,10 +216,14 @@ body {
   transition: all 0.2s ease-in-out;
   transform: scale(1.05);
   background-color: #000000;
+}
 
+.project-card:before {
+  vertical-align: bottom;
 }
 
 .project-card .btn {
+  vertical-align: text-bottom;
   display: block;
   background: #F6B352;
   color: white;

@@ -2,46 +2,45 @@
 <html>
   <head>
     <title> Farras Hibban </title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" >
-
     <style> @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     </style>
-
-
   </head>
 
   <body>
 
     <div class="header">
       <div class="header-section">
-        <h1>Profile Page</h1>
+        <h1>Personal Page</h1>
         <h2>Farras Mohammad Hibban Faddila</h2>
       </div>
     </div>
+
+    <ul class="navbar">
+      <li class="navbar-list"> <a href="#projects">Projects</a> </li>
+      <li class="navbar-list"> <a href="#experience">Experience</a> </li>
+      <li class="navbar-list"> <a href="#contacts">Contacts</a> </li>
+    </ul>
 
     <div class="wrapper">
 
       <div id = "content" class="body-content">
 
-        <ul class="navbar">
-          <li class="navbar-list"> <a href="#about-me">About Me</a> </li>
-          <li class="navbar-list"> <a href="#projects">Projects</a> </li>
-          <li class="navbar-list"> <a href="#interests">Interests</a> </li>
-          <li class="navbar-list"> <a href="#contacts">Contacts</a> </li>
-        </ul>
-
-        <div class="sub-body-container" style="background-color: #353e45;">
-          <div id="about-me" class="sub-body" style="color: white;">
-            <h1> About Me </h1>
-            <div class="mid-pic">
-              <img class="mid-pic" src="assets/images/hibban.jpg" alt="hibban">
+        <div class="sub-body-container img-container" style="background-color: #353e45;">
+          <div id="about-me" class="sub-body">
+            <img class="avatar" src="assets/images/hibban.jpg" alt="hibban">
+            <div class="bio">
+              <div class="info">
+                Competitive Programming and Math Enthusiast
+              </div>
+              <div class="info">
+                Informatics Engineering
+              </div>
+              <div class="info">
+                Institut Teknologi Bandung 2018
+              </div>
             </div>
-            <p>
-              Hi! My name is Farras. I am a former math olympian who cannot move on and therefore starts to do Competitive Programming. I am currently in third year at Institut Teknologi Bandung.
-            </p>
           </div>
         </div>
 
@@ -55,10 +54,10 @@
                 <div class="icon"></div>
                 <div class="features">
                   <ul>
-                    <li>Framework <span>Express.js</span></li>
+                    <li>Express.js</li>
                   </ul>
                 </div>
-                <a class="btn" href="https://github.com/donbasta">Cek repositori</a>
+                <a class="btn" href="https://github.com/donbasta">Browse Repository</a>
               </div>
 
               <div class="project-card">
@@ -66,32 +65,23 @@
                 <div class="icon"></div>
                 <div class="features">
                   <ul>
-                    <li>Framework <span>Java, JavaFX, Gradle</span></li>
+                    <li>Java</li>
+                    <li>JavaFX</li>
+                    <li>Gradle</li>
                   </ul>
                 </div>
-                <a class="btn" href="https://github.com/donbasta">Cek repositori</a>
+                <a class="btn" href="https://github.com/donbasta">Browse Repository</a>
               </div>
 
               <div class="project-card">
-                <div class="title">simple lol</div>
+                <div class="title">Lorem Ipsum</div>
                 <div class="icon"></div>
                 <div class="features">
                   <ul>
-                    <li>Framework <span>Tes</span></li>
+                    <li>Framework</li>
                   </ul>
                 </div>
-                <a class="btn" href="https://github.com/donbasta">Cek repositori</a>
-              </div>
-
-              <div class="project-card">
-                <div class="title">tes</div>
-                <div class="icon"></div>
-                <div class="features">
-                  <ul>
-                    <li>Framework <span>Tes</span></li>
-                  </ul>
-                </div>
-                <a class="btn" href="https://github.com/donbasta">Cek repositori</a>
+                <a class="btn" href="https://github.com/donbasta">Browse Repository</a>
               </div>
 
             </div>
@@ -99,51 +89,45 @@
         </div>
 
         <div class="sub-body-container" style="background-color: #353e45;">
-          <div id="interests" class="sub-body" style="color: white">
-            <h1> Interests </h1>
+          <div id="experience" class="sub-body" style="color: white">
+            <h1> Experience </h1>
 
-            <p>Currently I am interested to explore these topics further</p>
-            <div>
-              <ul>
-                <li>Machine Learning and Deep Learning</li>
-                <li>Complexity Theory</li>
-                <li>Cryptography</li>
-                <li>Algorithm Design and Analysis</li>
-                <li>Logic</li>
-                <li></li>
-              </ul>
-            </div>
 
-            <p>I support Manchester United in football</p>
-            <div class="mid-pic">
-              <img class="mid-pic" src="assets/images/manchester-united.png" alt="emyu">
-            </div>
-            <p>
-            As for hobbies, I am into Competitive Programming.
-            Feel free to check my repo on my CP submission in this repo.
-            Here are some of my accounts in CP Online Judges.
-            <div>
-              <ul>
-                <li>Codeforces: donbasta</li>
-                <li>vjudge: seicchi_28</li>
-                <li>TLX: Sei</li>
-              </ul>
-            </div>
-            </p>
+
+
           </div>
         </div>
 
         <div class="sub-body-container" style="background-color: #fcb61d;">
           <div id="contacts" class="sub-body">
             <h1>Contacts</h1>
-            <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-            <div>
-              <ul>
-                <li>Github: <a href="https://github.com/donbasta">link github</a>  </li>
-                <li>Facebook: <a href="https://www.facebook.com/farrashibban.faddila/"> link facebook </a> </li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/farrasfaddila/">linked in</a> </li>
-                <li>Email: <a href="mailto:faddilafarras@gmail.com">email me</a> </li>
-              </ul>
+            <div class="social-media-card-container">
+
+              <div class="social-media-card">
+                <div class="icon"></div>
+                <a class="platform" href="https://github.com/donbasta">Github</a>
+              </div>
+
+              <div class="social-media-card">
+                <div class="icon"></div>
+                <a class="platform" href="https://www.facebook.com/farrashibban.faddila/">Facebook</a>
+              </div>
+
+              <div class="social-media-card">
+                <div class="icon"></div>
+                <a class="platform" href="https://www.linkedin.com/in/farrasfaddila/">LinkedIn</a>
+              </div>
+
+              <div class="social-media-card">
+                <div class="icon"></div>
+                <a class="platform" href="https://www.instagram.com/faddilafarras/">Instagram</a>
+              </div>
+
+              <div class="social-media-card">
+                <div class="icon"></div>
+                <a class="platform" href="mailto:faddilafarras@gmail.com">Mail</a>
+              </div>
+
             </div>
           </div>
         </div>
@@ -171,10 +155,14 @@
     window.scroll(function() {
       parallax();
     });
-    // window.resize(function() {
-    //   parallax();
-    // });
-
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
   </script>
 
 </html>
