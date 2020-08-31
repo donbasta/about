@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Farras Hibban </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" >
+
+    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+
+
+  </head>
+
+  <body>
+
+    <div class="header">
+      <div class="header-section">
+        <h1>Profile Page</h1>
+        <h2>Farras Mohammad Hibban Faddila</h2>
+      </div>
+    </div>
+
+    <div class="wrapper">
+
+      <div id = "content" class="body-content">
+
+        <ul class="navbar">
+          <li class="navbar-list"> <a href="#about-me">About Me</a> </li>
+          <li class="navbar-list"> <a href="#projects">Projects</a> </li>
+          <li class="navbar-list"> <a href="#interests">Interests</a> </li>
+          <li class="navbar-list"> <a href="#contacts">Contacts</a> </li>
+        </ul>
+
+        <div class="sub-body-container" style="background-color: #353e45;">
+          <div id="about-me" class="sub-body" style="color: white;">
+            <h1> About Me </h1>
+            <div class="mid-pic">
+              <img class="mid-pic" src="assets/images/hibban.jpg" alt="hibban">
+            </div>
+            <p>
+              Hi! My name is Farras. I am a former math olympian who cannot move on and therefore starts to do Competitive Programming. I am currently in third year at Institut Teknologi Bandung.
+            </p>
+          </div>
+        </div>
+
+        <div class="sub-body-container" style="background-color: #fcb61d;">
+          <div id="projects" class="sub-body">
+            <h1> Projects </h1>
+            <div class="project-card-container">
+
+              <div class="project-card">
+                <div class="title">ADMS</div>
+                <div class="icon"></div>
+                <div class="features">
+                  <ul>
+                    <li>Framework <span>Express.js</span></li>
+                  </ul>
+                </div>
+                <a class="btn" href="https://github.com/donbasta">Cek repositori</a>
+              </div>
+
+              <div class="project-card">
+                <div class="title">Avatar Game</div>
+                <div class="icon"></div>
+                <div class="features">
+                  <ul>
+                    <li>Framework <span>Java, JavaFX, Gradle</span></li>
+                  </ul>
+                </div>
+                <a class="btn" href="https://github.com/donbasta">Cek repositori</a>
+              </div>
+
+              <div class="project-card">
+                <div class="title">simple lol</div>
+                <div class="icon"></div>
+                <div class="features">
+                  <ul>
+                    <li>Framework <span>Tes</span></li>
+                  </ul>
+                </div>
+                <a class="btn" href="https://github.com/donbasta">Cek repositori</a>
+              </div>
+
+              <div class="project-card">
+                <div class="title">tes</div>
+                <div class="icon"></div>
+                <div class="features">
+                  <ul>
+                    <li>Framework <span>Tes</span></li>
+                  </ul>
+                </div>
+                <a class="btn" href="https://github.com/donbasta">Cek repositori</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-body-container" style="background-color: #353e45;">
+          <div id="interests" class="sub-body" style="color: white">
+            <h1> Interests </h1>
+
+            <p>Currently I am interested to explore these topics further</p>
+            <div>
+              <ul>
+                <li>Machine Learning and Deep Learning</li>
+                <li>Complexity Theory</li>
+                <li>Cryptography</li>
+                <li>Algorithm Design and Analysis</li>
+                <li>Logic</li>
+                <li></li>
+              </ul>
+            </div>
+
+            <p>I support Manchester United in football</p>
+            <div class="mid-pic">
+              <img class="mid-pic" src="assets/images/manchester-united.png" alt="emyu">
+            </div>
+            <p>
+            As for hobbies, I am into Competitive Programming.
+            Feel free to check my repo on my CP submission in this repo.
+            Here are some of my accounts in CP Online Judges.
+            <div>
+              <ul>
+                <li>Codeforces: donbasta</li>
+                <li>vjudge: seicchi_28</li>
+                <li>TLX: Sei</li>
+              </ul>
+            </div>
+            </p>
+          </div>
+        </div>
+
+        <div class="sub-body-container" style="background-color: #fcb61d;">
+          <div id="contacts" class="sub-body">
+            <h1>Contacts</h1>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>
+              <ul>
+                <li>Github: <a href="https://github.com/donbasta">link github</a>  </li>
+                <li>Facebook: <a href="https://www.facebook.com/farrashibban.faddila/"> link facebook </a> </li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/farrasfaddila/">linked in</a> </li>
+                <li>Email: <a href="mailto:faddilafarras@gmail.com">email me</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+
+  <script>
+    function parallax() {
+      var scroll_top = document.documentElement.scrollTop;
+      console.log(scroll_top);
+      var body_top = document.getElementsByClassName("body-content")[0].offsetTop;
+      var header_height = document.getElementsByClassName("header-section")[0].scrollHeight;
+      console.log(header_height);
+
+      console.log(document.getElementById("content").style.marginTop);
+      document.getElementById("content").style.marginTop = `${header_height}px`;
+      console.log(document.getElementById("content").style.marginTop);
+      var sisa = header_height-scroll_top;
+
+      document.getElementsByClassName("header")[0].style.height = `${sisa}px`;
+    }
+    parallax();
+    window.scroll(function() {
+      parallax();
+    });
+    // window.resize(function() {
+    //   parallax();
+    // });
+
+  </script>
+
+</html>
