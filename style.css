@@ -266,6 +266,7 @@ body {
 }
 
 .timeline ul li div {
+  border-radius: 5px;
   position: relative;
   bottom: 0;
   width: 400px;
@@ -293,7 +294,7 @@ body {
 }
 
 .timeline ul li:nth-child(even) div {
-  left: -472px;
+  left: -468px;
  } 
 
 .timeline ul li:nth-child(even) div::before {
